@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt Me Form</title>
+</head>
+
+<body>
+
+  <h1>แบบฟอร์มขอรับอุปการะสุนัข</h1>
+
+  <form>
+    <fieldset>
+      <legend>ข้อมูลส่วนตัวผู้ขอรับอุปการะ</legend>
+
+      <label for="fullname">ชื่อ-นามสกุล:</label>
+      <input type="text" id="fullname" name="fullname">
+      <br><br>
+
+      <label for="age">อายุ:</label>
+      <input type="number" id="age" name="age">
+      <br><br>
+
+      <label for="email">อีเมล:</label>
+      <input type="email" id="email" name="email">
+      <br><br>
+
+      <label for="phone">เบอร์โทรศัพท์:</label>
+      <input type="tel" id="phone" name="phone">
+      <br><br>
+
+      <label for="address">ที่อยู่:</label><br>
+      <textarea id="address" name="address" rows="4" cols="40"></textarea>
+      <br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>ข้อมูลการอยู่อาศัย</legend>
+
+      <label for="housing">ลักษณะที่พักอาศัย:</label>
+      <select id="housing" name="housing">
+        <option value="">-- กรุณาเลือก --</option>
+        <option value="house">บ้านเดี่ยว</option>
+        <option value="townhome">ทาวน์โฮม</option>
+        <option value="condo">คอนโด / อพาร์ตเมนต์</option>
+        <option value="dorm">หอพัก</option>
+      </select>
+      <br><br>
+
+      <p>ลักษณะการเลี้ยง:</p>
+      <input type="radio" id="indoor" name="raising_style" value="indoor">
+      <label for="indoor">เลี้ยงในบ้าน</label><br>
+
+      <input type="radio" id="outdoor" name="raising_style" value="outdoor">
+      <label for="outdoor">เลี้ยงนอกบ้าน</label><br>
+
+      <input type="radio" id="mixed" name="raising_style" value="mixed">
+      <label for="mixed">เลี้ยงทั้งในและนอกบ้าน</label>
+      <br><br>
+
+      <label for="petcount">จำนวนสัตว์เลี้ยงที่มีอยู่ปัจจุบัน:</label>
+      <input type="number" id="petcount" name="petcount" min="0">
+      <br><br>
+    </fieldset>
+
+    <br>
+
+    <input type="checkbox" id="agreement" name="agreement">
+    <label for="agreement">
+      ข้าพเจ้ายอมรับข้อตกลงและไม่รับรองการได้รับอุปการะสุนัข
+    </label>
+
+    <br><br>
+
+    <input type="submit" value="ส่งแบบฟอร์ม">
+    <input type="reset" value="ล้างข้อมูล">
+  </form>
+
+  <br>
+  <a href="index.html">กลับไปหน้า index.html</a>
+  <script src="adoptme.js"></script>
+</body>
+</html>
